@@ -10,13 +10,13 @@
         <div>
             <br>
             <code>
-                UPDATE {{prefix}}options SET option_value = replace(option_value, '{{oldurl}}', '{{newurl}}) WHERE option_name = 'home' OR option_name = 'siteurl';<br>
+                UPDATE {{prefix}}options SET option_value = replace(option_value, '{{oldurl}}', '{{newurl}}') WHERE option_name = 'home' OR option_name = 'siteurl';<br>
 
-UPDATE {{prefix}}posts SET guid = replace(guid, '{{oldurl}}','{{newurl}});<br>
+UPDATE {{prefix}}posts SET guid = replace(guid, '{{oldurl}}','{{newurl}}');<br>
 
-UPDATE {{prefix}}posts SET post_content = replace(post_content, '{{oldurl}}', '{{newurl}});<br>
+UPDATE {{prefix}}posts SET post_content = replace(post_content, '{{oldurl}}', '{{newurl}}');<br>
 
-UPDATE {{prefix}}postmeta SET meta_value = replace(meta_value,'{{oldurl}}','{{newurl}});
+UPDATE {{prefix}}postmeta SET meta_value = replace(meta_value,'{{oldurl}}','{{newurl}}');
             </code>
         </div>
     </div>
