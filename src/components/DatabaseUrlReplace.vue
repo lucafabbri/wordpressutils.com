@@ -1,9 +1,9 @@
 <template>
     <div>
-        <h3>1) Wordpress base URL database replace</h3>
+        <h2>1) Wordpress base URL database replace</h2>
         <p>Change and Update WordPress URLS in Database When Site is Moved to new Host</p>
         <div>
-            <label for="prefix"> Prefix </label>
+            <label for="prefix"> Table Prefix </label>
             <input id="prefix" type="text" v-model="prefix" />
             <label for="orldurl"> Old URL </label>
             <input id="oldurl" type="text" v-model="oldurl" />
@@ -12,15 +12,12 @@
         </div>
         <div>
             <br>
-            <code>
-                UPDATE {{prefix}}options SET option_value = replace(option_value, '{{oldurl}}', '{{newurl}}') WHERE option_name = 'home' OR option_name = 'siteurl';<br>
-
-UPDATE {{prefix}}posts SET guid = replace(guid, '{{oldurl}}','{{newurl}}');<br>
-
-UPDATE {{prefix}}posts SET post_content = replace(post_content, '{{oldurl}}', '{{newurl}}');<br>
-
+            <pre>
+UPDATE {{prefix}}options SET option_value = replace(option_value, '{{oldurl}}', '{{newurl}}') WHERE option_name = 'home' OR option_name = 'siteurl';
+UPDATE {{prefix}}posts SET guid = replace(guid, '{{oldurl}}','{{newurl}}');
+UPDATE {{prefix}}posts SET post_content = replace(post_content, '{{oldurl}}', '{{newurl}}');
 UPDATE {{prefix}}postmeta SET meta_value = replace(meta_value,'{{oldurl}}','{{newurl}}');
-            </code>
+            </pre>
         </div>
     </div>
 </template>

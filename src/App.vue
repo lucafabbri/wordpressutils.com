@@ -2,9 +2,6 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/wu-logo.png">
     <Home />
-    <footer>
-      powered by Luca Fabbri and <a href="https://www.zepfiro.com" target="_blank">Higrow</a>
-    </footer>
   </div>
 </template>
 
@@ -21,18 +18,14 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width:1024px;
+  margin: auto;
 }
-footer{
-  position: fixed;
-  bottom:0;
-  text-align: center;
-  width: 100%;
-  padding:15px;
+pre{
+  text-align: left;
+  padding: 15px;
+  background-color: #eee;
+  border: thin dotted #666;
+  overflow: auto;
 }
 </style>
