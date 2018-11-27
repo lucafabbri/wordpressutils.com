@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/wu-logo.png">
+    <Home />
+    <footer>
+      powered by Luca Fabbri and <a href="https://www.zepfiro.com" target="_blank">Higrow</a>
+    </footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Home from './components/Home.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Home
   }
 }
 </script>
@@ -24,5 +27,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+footer{
+  position: fixed;
+  bottom:0;
+  text-align: center;
+  width: 100%;
+  padding:15px;
 }
 </style>
