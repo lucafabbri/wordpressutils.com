@@ -1,12 +1,15 @@
 <template>
     <div>
         <h3>1) Wordpress base URL database replace</h3>
-        <label for="prefix"> Prefix </label>
-        <input id="prefix" type="text" v-model="prefix" />
-        <label for="orldurl"> Old URL </label>
-        <input id="oldurl" type="text" v-model="oldurl" />
-        <label for="newurl"> New URL </label>
-        <input id="newurl" type="text" v-model="newurl" />
+        <p>Change and Update WordPress URLS in Database When Site is Moved to new Host</p>
+        <div>
+            <label for="prefix"> Prefix </label>
+            <input id="prefix" type="text" v-model="prefix" />
+            <label for="orldurl"> Old URL </label>
+            <input id="oldurl" type="text" v-model="oldurl" />
+            <label for="newurl"> New URL </label>
+            <input id="newurl" type="text" v-model="newurl" />
+        </div>
         <div>
             <br>
             <code>
