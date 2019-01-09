@@ -5,15 +5,18 @@
       A collection of utils for people who work with wordpress
     </p>
     <DatabaseUrlReplace />
+    <MetaKeyReplace />
   </div>
 </template>
 
 <script>
 import DatabaseUrlReplace from './DatabaseUrlReplace.vue'
+import MetaKeyReplace from './MetaKeyReplace.vue'
 export default {
   name: 'Home',
   components: {
-    DatabaseUrlReplace
+    DatabaseUrlReplace,
+    MetaKeyReplace
   }
 }
 </script>
