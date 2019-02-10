@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/wu-logo.png">
+    <img alt="Wordpress utils logo" width="80" src="./assets/wu-logo.png">
     <Home />
   </div>
 </template>
